@@ -1,10 +1,11 @@
 pipeline {
     agent none 
     stages {
-        stage('Example Build') {
+        stage('Build Image') {
             steps {
                 sh ...
-                  "echo 'hello-world'"
+                  docker build -t faizu6/dockerimage .
+                  docker images
                    ...
             }
         }
