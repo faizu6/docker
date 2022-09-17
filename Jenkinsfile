@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build Image') {
             steps {
-                 sh "docker image build -t faizu6/ansible:${currentBuild.number} ."
+                 sh "docker image build -t faizu6/ansible:${Build_number} ."
             }
         }
         stage('login') {
