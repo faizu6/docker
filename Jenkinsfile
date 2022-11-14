@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'prod-slave' } 
+    agent { any }
     stages {
         stage('Build Image') {
             steps {
