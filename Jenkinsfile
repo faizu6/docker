@@ -3,7 +3,6 @@ pipeline {
     stages {
         stage('Build Image') {
             steps {
-                 pwd
                  sh "docker image build -t faizu6/ansible-img1:${BUILD_NUMBER} ."
             }
         }
